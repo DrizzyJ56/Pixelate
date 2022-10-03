@@ -15,3 +15,23 @@ body {
 }
 
 /* your CSS below! */
+td{
+  height: 50px;
+  width: 50px;
+  background-color: lightgray;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.purple {
+  background-color: purple;
+}
+.green {
+  background-color: green;
+}
+.gold{
+  background-color: goldenrod;
+}
