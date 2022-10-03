@@ -1,4 +1,5 @@
 // Your code here
+let selectedColor = 'red'
 const tableGrab = document.getElementById('table')
 
 function makeRow(){
@@ -17,7 +18,17 @@ addRow.addEventListener('click', makeRow)
 tableGrab.addEventListener('click', colorize)
 
 function colorize(event){
-    console.log('clicked!')
+    const clickColor = event.target
+    if(clickColor.className.length) {
+        clickColor.className = ''
+    } else {
+        clickColor.className = selectedColor  
+    }
 }
 
+const colorPick = document.getElementById('colors')
+colorPick.addEventListener('change', changeColor)
+function changeColor(event){
+    selectedColor = event.target.value
 
+}
